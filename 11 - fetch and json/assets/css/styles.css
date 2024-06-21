@@ -1,0 +1,18 @@
+*{
+ margin: 0;
+ padding: 0;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.products > div {
+    margin: 5px 50px 20px;
+    flex: 1;
+}
+
+.products > div > p {
+    margin-top: 5px;
+}
