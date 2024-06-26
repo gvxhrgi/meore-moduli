@@ -1,0 +1,42 @@
+.split {
+    display: flex;
+    height: 100%;
+    width: 50%;
+    margin-top: 6vh;
+    position: fixed;
+    flex-wrap: wrap;
+    flex: 1;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+
+  .left {
+    justify-content: center;
+    width: 20vw;
+    left: 0;
+    background-color: #555;
+  }
+
+  .left img {
+    width: 100%;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 100px;
+  }
+
+  .left p {
+    font-size: 2rem;
+    color: #fff;
+  }
+  
+  .right {
+    right: 0;
+    width: 80vw;
+    background-color: #f0f0f0f0;
+  }
+
+  .right p {
+    margin: 20px;
+    font-size: 2rem;
+  }

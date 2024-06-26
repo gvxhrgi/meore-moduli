@@ -1,0 +1,145 @@
+.modal.hidden {
+  display: none;
+}
+
+.split-screen {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-wrap: nowrap;
+  flex: 1;
+  width: 50vw;
+  height: 50vh;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fffcfc;
+  border: 2px solid black;
+  border-radius: 25px;
+}
+
+.left-pane,
+.right-pane {
+  flex: 1;
+  padding: 20px;
+  border-radius: 25px;
+}
+
+.left-pane img {
+  width: 100%;
+  height: 100%;
+  border: 2px solid black;
+  border-radius: 8px;
+}
+
+.prodTitle2 {
+  font-size: 2rem;
+}
+
+.right-pane .desc2 {
+  font-size: 1.2rem;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: 1px solid black;
+  overflow: auto;
+}
+
+.end {
+  position: absolute;
+  bottom: 0;
+}
+
+.price2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.rating {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.instock {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.btn {
+  margin-top: 5px;
+}
+
+.btn.buy {
+  padding: 8px 32px;
+  background-color: #333;
+  text-decoration: none;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.btn.close {
+  padding: 8px 32px;
+  background-color: #333;
+  text-decoration: none;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .split-screen {
+    width: 100vw;
+  }
+
+  .left-pane {
+    height: 250px;
+  }
+
+  .desc2{
+    font-size: 1.1rem;
+  }
+
+  .price2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .rating {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .instock {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+}
+
+@media only screen and (min-width: 321px) {
+  .split-screen {
+    width: 90vw;
+    height: 70vh;
+  }
+  
+  .desc2{
+    font-size: 1.1rem;
+    overflow: scroll;
+    height: 100px;
+  }
+
+  .price2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .rating {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .instock {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+}
